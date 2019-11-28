@@ -29,3 +29,35 @@ $bacground-opacity: 0.9;
     }
   }
 }
+
+// Media query mixins
+@mixin mediaSm {
+  //small
+  //media içerisine giren tüm cssler max 500px yada altı olacak
+  @media screen and(max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  //Medium screen
+  //media içerisine giren tüm cssler max 768 px yada altı olacak
+  @media screen and(max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  //Large screen
+  //media içerisine giren tüm cssler 769px ile 1170px arasında olacak
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  //media içerisine giren tüm cssler 1171px ve üstü olacak
+  @media screen and(max-width: 1171px) {
+    @content;
+  }
+}

@@ -108,6 +108,10 @@
       //Slide in from right
       transform: translate3d(0, 0, 0);
     }
+
+    &.current > a {
+      color: $secondary-color;
+    }
   }
 
   .nav-link {
@@ -115,17 +119,13 @@
     position: relative;
     font-size: 30px;
     text-transform: 1rem 0;
-    font-weight: 300;
+    font-weight: 350;
     color: #fff;
     text-decoration: none;
     @include easeOut;
     &:hover {
       color: $secondary-color;
     }
-  }
-
-  &.current > a {
-    color: $secondary-color;
   }
 }
 
