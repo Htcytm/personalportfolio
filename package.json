@@ -4,7 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "",

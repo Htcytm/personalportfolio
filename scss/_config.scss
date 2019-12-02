@@ -51,7 +51,7 @@ $bacground-opacity: 0.9;
 @mixin mediaMd {
   //Medium screen
   //media içerisine giren tüm cssler max 768 px yada altı olacak
-  @media screen and(max-width: 768px) {
+  @media screen and (min-width: 501px) and(max-width: 768px) {
     @content;
   }
 }
@@ -66,7 +66,7 @@ $bacground-opacity: 0.9;
 
 @mixin mediaXl {
   //media içerisine giren tüm cssler 1171px ve üstü olacak
-  @media screen and(max-width: 1171px) {
+  @media screen and(min-width: 1171px) {
     @content;
   }
 }
